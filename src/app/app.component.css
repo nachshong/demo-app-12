@@ -7,12 +7,13 @@ div.page {
 }
 
 header {
-    text-align: center;
     padding: 5px;
 }
 
 header h1 {
-    margin: 5px;
+    text-align: center;
+    font-size: 28px;
+    margin: 10px 0 5px;
 }
 
 main {
@@ -34,4 +35,8 @@ footer div.ribbon {
 
 footer div.ribbon .item {
     margin: 0 10px 10px 0; 
+}
+
+footer cite {
+    font-family: 'Times New Roman', Times, serif;
 }
