@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { SimpleBindingComponent } from './simple-binding/simple-binding.component';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SimpleBindingComponent } from './simple-binding/simple-binding.componen
     NavBarComponent,
     HomeComponent,
     SimpleBindingComponent,
+    BooksComponent,
   ],
   imports: [
     BrowserModule,
