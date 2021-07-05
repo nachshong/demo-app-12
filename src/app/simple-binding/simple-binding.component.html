@@ -1,1 +1,69 @@
-<p>simple-binding works!</p>
+<p>
+  simple-binding works!
+</p>
+<hr>
+
+<p>
+  Simple one-way binding using interpolation <code>{{...}<!---->}</code>
+</p>
+<p>
+  <input value="{{kingName}}" readonly>
+  <br>
+  <button (click)="changeToDavid()">Set King David</button>
+  <button (click)="changeToSolomon()">Set King Solomon</button>
+</p>
+<hr>
+<p>
+  Two-way binding using property binding <code>[property]</code> and event binding <code>(event)</code>
+</p>
+<p>
+  First Name:
+  <br>
+  <input [value]="firstName" (input)="setFirstNameByEvent($event)">
+  <br>
+  <input [value]="firstName" (input)="setFirstNameByEvent($event)">
+</p>
+<p>
+  The value is passed to the handler by the template <code>$event</code> object
+</p>
+<hr>
+<p>
+  Again, two-way binding using property binding <code>[property]</code> and event binding <code>(event)</code>
+</p>
+<p>
+  <input [value]="middleName" (input)="setMiddleNameByInput(middle1)" #middle1> <small> // middle1</small>
+  <br>
+  <input [value]="middleName" (input)="setMiddleNameByValue(middle2.value)" #middle2> <small> // middle2.value</small>
+</p>
+<p>
+  But here, the value is passed to the handler by a template reference variables <code>#var</code>
+</p>
+<hr>
+<p>
+  Two-way binging using NgModel directive <code>[(ngModel)]</code>
+</p>
+<p>
+  Last Name:
+  <br>
+  <input [(ngModel)]="lastName">
+  <br>
+  <input [(ngModel)]="lastName">
+</p>
+<p>
+  Before using the ngModel directive, you must import the <em>FormsModule</em> and add it to the NgModule's imports
+  list.
+</p>
+<hr>
+<p>
+  Style binding using the built-in NgStyle directive <code>[style.xyz]</code>
+</p>
+<p>
+  <span class="box" [style.width.px]="boxSize" [style.height.px]="boxSize" [class.big]="boxSize >= 150"
+    [class.huge]="boxSize >= 200" (click)="incBoxSize()" (contextmenu)="decBoxSize()">
+    <strong>My Box</strong>
+    <small>(click to enlarge)</small>
+  </span>
+</p>
+<p>
+  A class binding is also enabled here by using the NgClass directive <code>[class.name]</code>
+</p>

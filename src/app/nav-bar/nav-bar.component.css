@@ -1,8 +1,3 @@
-nav {
-    clear: both;
-    margin: 5px 0;
-}
-
 nav a.active {
     font-style: oblique;
     font-weight: bold;

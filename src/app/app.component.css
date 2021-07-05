@@ -7,21 +7,22 @@ div.page {
 }
 
 header {
-    padding: 5px;
+    margin: 8px 16px;
 }
 
 header h1 {
     text-align: center;
     font-size: 28px;
-    margin: 10px 0 5px;
+    margin: 8px 0;
 }
 
 main {
     min-height: 250px;
+    margin: 8px 0 32px;
 }
 
 footer {
-    padding: 5px 0 30px;
+    margin: 8px 0 32px;
 }
 
 footer img.small-logo {
@@ -34,7 +35,7 @@ footer div.ribbon {
 }
 
 footer div.ribbon .item {
-    margin: 0 10px 10px 0; 
+    margin: 8px 8px 8px 0; 
 }
 
 footer cite {
